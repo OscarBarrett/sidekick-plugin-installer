@@ -6,7 +6,7 @@ Since November 2015, HubSpot [no longer officially supports the plugin](https://
 
 ### Usage
 
-Download the latest release and run Install, following the instructions.
+Download Install.zip from latest release. Unarchive and run Install, following the instructions.
 
 ### What exactly does this do?
 
