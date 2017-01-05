@@ -31,7 +31,9 @@ tell application "Finder"
     end if
 
     # Move the plugin into place
-    do shell script "mv " & quoted form of bundlepath & " ~/Library/Mail/Bundles/Sidekick.mailbundle"
+    if bundlepath does not contain "/Library/Mail/Bundles/Sidekick.mailbundle" then
+      do shell script "mv " & quoted form of bundlepath & " ~/Library/Mail/Bundles/Sidekick.mailbundle"
+    end if
 
     # Restart Mail
     tell application "Mail"
